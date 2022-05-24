@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    height: 25px;
+    width: 133px;
+    margin: 40px 0 0 77px;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    color: #333333;
+
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+img{
+    height: 447px;
+    width: 539px;
+    border-radius: 0px;
+
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+h1{
+    font-family: Space Mono;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    height: 190px;
+    width: 586px;
+}
+
+p{
+    height: 108px;
+    width: 381px;
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    
+}
+
+button{
+    width: 216px;
+    height: 68px;
+    background-color: #333333;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+button::before{
+    transition: all ease-in-out .6s;
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -400px;
+    transform: rotate(45deg) ;
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    background-color: #fc4040;
+    z-index: 10;
+}
+button:hover::before{
+    left: -20px;
+}
+
+span{
+    z-index: 20;
+    position: relative;
+}
+
+
+@media screen and (max-width:600px){
+    .info p, h1{
+        width: auto;
+        height: auto;
+    }
+    .info{
+        margin: 10px;
+    }
+}
